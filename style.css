@@ -1,0 +1,61 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0; }
+
+.chessboard {
+  display: flex;
+  flex-wrap: wrap;
+  width: min(80vh, 80vw);
+  height: min(80vh, 80vw);
+  transform: scale(0.6);
+  /* Even zoom in or zoom out the screen always visible */ }
+
+.row {
+  display: flex;
+  flex-wrap: nowrap;
+  width: 100%; }
+
+.square {
+  width: min(10vh, 10vw);
+  height: min(10vh, 10vw);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 2rem; }
+
+.light {
+  background-color: white; }
+
+.dark {
+  background-color: black; }
+
+.piece {
+  font-size: 5vmin;
+  /* Relative unit for consistent size */
+  color: #fff;
+  /* Text color (white) */
+  background-color: #3498db;
+  /* Blue circle background color */
+  width: 5vmin;
+  /* Relative unit for consistent size */
+  height: 5vmin;
+  /* Relative unit for consistent size */
+  border-radius: 50%;
+  /* Make it a circle */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: transform 0.3s ease-in-out; }
+
+/*---------------------------ANIMATION---------------------------------------*/
+.selected {
+  transform: scale(1.2);
+  /* Enlarge the selected piece */ }
+
+.piece.draggable {
+  cursor: grab; }
+
+/*# sourceMappingURL=style.css.map */
