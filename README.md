@@ -1,2 +1,2 @@
-# Notepad-App
-An app that allow users to take note, this app will save the data using local storage and cloud storage
+# Responsive-ChessBoard
+This chessboard is responsive in all screen sizes
